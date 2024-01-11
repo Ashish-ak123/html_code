@@ -9,5 +9,5 @@ stages:
   - stage: stageB
     displayName: "this is stage B"
     jobs:
-      - Job: jobB
+      - job: jobB
     
