@@ -7,7 +7,7 @@ stages:
     jobs:
       - job: jobA
   - stage: stageB
-    displayname: "this is stage B"
+    displayName: "this is stage B"
     jobs:
       - Job: jobB
     
