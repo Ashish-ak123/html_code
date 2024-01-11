@@ -1,14 +1,13 @@
-trigger:
-- main
-
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+stages:
+  - stage: stageA
+    displayName: "this is stage A"
+    jobs:
+      - job: jobA
+  - stage: stageB
+    displayname: "this is stage B"
+    jobs:
+      - Job: jobB
+    
